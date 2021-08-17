@@ -2,6 +2,7 @@
 # возраст, размер кредита и количество месяцев
 age_coeff = 0
 credit_time = int(input("На какое время вы берете кредит"))  # Вреия, на которое берется кредит
+credit_size= int(input("Укажите размер кредита"))  # размер кредита
 percent = int(input("Под какой процент?"))  # процент
 age = int(input("Введите Ваш возраст?"))  # возраст клиента
 SalarySize = int(input("Введите размер своего ежемесячного дохода"))  # Размер зарплаты
@@ -21,7 +22,7 @@ if childrenCount == 1:
     child_expense = 10000
 else:
     child_expense = childrenCount * 8000
-payment_of_month = ((credit_Size + (credit_Size * percent / (12 * 100)) * credit_time))  # ежемесячный платёж
+payment_of_month = ((credit_size + (credit_size * percent / (12 * 100)) * credit_time))  # ежемесячный платёж
 required_salary = (payment_of_month * age_coeff) + expense  # рекомендуемая зарплата
 print("Ежемесячная платеж составит" + str(
     payment_of_month) + "\n" + "Для одобрения кредита ваша зарплата должна составлять" + str(required_salary))
