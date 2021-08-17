@@ -1,12 +1,11 @@
 # возрастной коэффициент, который влияет на платёжеспособность12
 # возраст, размер кредита и количество месяцев
 age_coeff = 0
-requirementalSalary = 40000
-credit_time = int(input("На какой период вы хотите взять кредит:"))  # Время,на которое берется кредит
+credit_time = int(input("На какой период вы хотите взять кредит:" ))  #емя,на которое берется кредит
 credit_Size = int(input("Укажите размер вашего кредита в рублях?"))  # размер кредита
 percent = int(input("Под какой процент?"))  # процент
-age = int(input("Введите Ваш возраст?"))# возраст клиента
-SalarySize = int(input("Введите размер своего ежемесячного дохода")) # размер зарплаты
+age = int(input("Введите Ваш возраст?"))  # возраст клиента
+SalarySize = int(input("Введите размер своего ежемесячного дохода"))  # Размер зарплаты
 personal_expense = int(input("Введите размер ежемесячных трат"))  # личные траты
 childrenCount = int(input("Введите количество детей"))  # количество детей
 child_expense = int(input("Введите траты на детей в месяц"))
@@ -25,4 +24,4 @@ else:
     child_expense = childrenCount * 8000
 payment_of_month = ((credit_Size+(credit_Size*percent/(12*100))*credit_time))  # ежемесячный платёж
 required_salary=(payment_of_month*age_coeff)+expense  # рекомендуемая зарплата
-print("Ежемесячная платеж составит"+str(payment_of_month)+"\n"+"Для одобрения кредита ваша зарплата должна составлять"+requirementalSalary)
+print("Ежемесячная платеж составит"+str(payment_of_month)+"\n"+"Для одобрения кредита ваша зарплата должна составлять"+str(required_salary))
