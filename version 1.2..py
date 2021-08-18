@@ -1,0 +1,9 @@
+age_coeff = 0
+credit_time = int(input(" На какое время хотите взять кредит?"+" "))
+credit_size = int(input("Укажите размер кредита:"+" "))
+age = int(input("Укажите ваш возраст:"+""))
+SalarySize = int(input("Укажите размер вашей зарплаты"))
+personal_expence = int(input("Введите уровень затрат в месяц"))
+childrenCount = int(input("Введите количество детей:"+" "))  # количество детей
+child_expense = int(input("Введите траты на детей в месяц"))
+expense = personal_expence + child_expense
