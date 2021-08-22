@@ -11,7 +11,7 @@ from tkinter import messagebox
 window=Tk()
 window.title('GUI bancker')  # window title
 window.grid()  # make window visible
-window.geometry('800*800')  # window size
+window.geometry('800x800')  # window size
 
 # create name label and entry
 
